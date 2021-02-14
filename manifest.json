@@ -1,0 +1,37 @@
+{
+    "theme_color": "#510b7b",
+    "background_color": "#510b7b",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/index.html",
+    "app_name": "Live Soccer PWA",
+    "short_name": "Live Soccer",
+    "description": "PWA Live Soccer App Submission 2",
+    "icons": [{
+            "src": "/image/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/image/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/image/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/image/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "name": "Live Soccer",
+    "gcm_sender_id": "221303095740"
+}

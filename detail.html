@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Soccer</title>
+    <meta name="description" content="Live Soccer PWA" />
+    <meta name="theme-color" content="#510b7b">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/icon-192x192.png">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://crests.football-data.org">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @media screen and (max-width: 600px) {
+            .logo {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="purple darken-3" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo center" id="logo-container">
+                <img class="logo" src="image/logo.svg" alt="Logo Live Socer">
+            </a>
+            <a href="./index.html" class="sidenav-trigger white-text" data-target="nav-mobile">
+                <i class="material-icons">arrow_back</i>
+            </a>
+
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+
+    <div class="container" id="body-content">
+        <div id="preloader">
+            <div class="preloader-wrapper big active" style="display: block; margin: 40px auto">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" id="favorite">
+            <i class="large material-icons">favorite</i>
+        </a>
+    </div>
+
+    <footer class="page-footer purple darken-3" style="padding: 0; margin-top: 50px;">
+        <div class="footer-copyright">
+            <div class="container center-align">©2020 • Live Soccer PWA Apps for Submission 3rd of Dicoding</div>
+        </div>
+    </footer>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="sw-register.js"></script>
+</body>
+
+</html>
